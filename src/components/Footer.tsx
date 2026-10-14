@@ -6,9 +6,10 @@ export default function Footer() {
   const quickLinks = [
     { name: "Home", href: "/home" },
     { name: "About Us", href: "/about" },
-    { name: "Treatments", href: "/#treatments" },
-    { name: "Panchakarma", href: "/#panchakarma" },
+    { name: "Treatments", href: "/treatments" },
+    { name: "Panchakarma", href: "/panchakarma" },
     { name: "Products", href: "/#products" },
+    { name: "Contact", href: "/contact" },
     { name: "Blog", href: "/#blog" },
     { name: "Testimonials", href: "/#testimonials" },
     { name: "FAQs", href: "/#faqs" },
@@ -16,7 +17,7 @@ export default function Footer() {
 
   const ourServices = [
     { name: "Doctor Consultation", href: "/#services-consultation" },
-    { name: "Panchakarma Therapies", href: "/#services-panchakarma" },
+    { name: "Panchakarma Therapies", href: "/panchakarma" },
     { name: "Yoga & Lifestyle Care", href: "/#services-yoga" },
     { name: "Ayurvedic Medicines", href: "/#services-medicines" },
   ];
@@ -51,7 +52,7 @@ export default function Footer() {
 
           {/* Col 2: QUICK LINKS */}
           <div className="lg:px-8 lg:border-r lg:border-[#194E3E]/70">
-            <h3 className="text-[11.5px] font-bold tracking-[0.18em] uppercase text-[#C59E5B]">
+            <h3 className="text-[11.5px] font-bold tracking-[1.4px] uppercase text-[#A58351]">
               Quick Links
             </h3>
             <ul className="mt-4 space-y-1.5 sm:space-y-2 text-[12.5px] sm:text-[13px]">
@@ -70,7 +71,7 @@ export default function Footer() {
 
           {/* Col 3: OUR SERVICES */}
           <div className="lg:px-8 lg:border-r lg:border-[#194E3E]/70">
-            <h3 className="text-[11.5px] font-bold tracking-[0.18em] uppercase text-[#C59E5B]">
+            <h3 className="text-[11.5px] font-bold tracking-[1.4px] uppercase text-[#A58351]">
               Our Services
             </h3>
             <ul className="mt-4 space-y-2 text-[12.5px] sm:text-[13px]">
@@ -90,13 +91,13 @@ export default function Footer() {
           {/* Col 4: VISIT & CONNECT */}
           <div className="lg:pl-8 space-y-5">
             <div>
-              <h3 className="text-[11.5px] font-bold tracking-[0.18em] uppercase text-[#C59E5B]">
+              <h3 className="text-[11.5px] font-bold tracking-[1.4px] uppercase text-[#A58351]">
                 Visit & Connect
               </h3>
               <div className="mt-4">
                 <Link
                   href="/#consultation"
-                  className="group inline-flex items-center justify-between gap-4 rounded-md border border-[#235848] bg-transparent px-4 py-2.5 sm:py-3 text-[13px] font-medium text-[#E2EDE7] transition-all hover:bg-[#124535] hover:border-[#387B65] hover:text-white"
+                  className="group inline-flex items-center justify-between gap-4 rounded-md border border-[#235848] bg-transparent px-4 py-2.5 sm:py-3 text-[13.5px] sm:text-[14px] font-semibold text-[#E2EDE7] transition-all hover:bg-[#124535] hover:border-[#387B65] hover:text-white"
                 >
                   <span>Book a Consultation</span>
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />

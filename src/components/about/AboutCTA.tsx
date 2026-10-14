@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutCTA() {
   return (
-    <section className="relative overflow-hidden bg-[#0D3226] py-12 sm:py-16 text-white">
+    <section className="relative overflow-hidden bg-[#0D3226] py-8 sm:py-10 lg:py-12 text-white">
       {/* Decorative botanical element on the right */}
       <img
         src="/cont.png"
@@ -16,10 +16,10 @@ export default function AboutCTA() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           {/* Left Text */}
           <div className="max-w-2xl">
-            <h2 className="font-serif text-[28px] sm:text-[34px] lg:text-[38px] font-normal text-white leading-tight">
+            <h2 className="font-serif text-[28px] sm:text-[34px] lg:text-[38px] font-medium text-white leading-tight">
               Begin with a conversation.
             </h2>
-            <p className="mt-2 text-[15px] sm:text-[16px] font-normal leading-relaxed text-[#D2E2D9]">
+            <p className="mt-2 text-[15px] sm:text-[16px] font-medium leading-relaxed text-[#D2E2D9]">
               Book a consultation to discuss your health concerns and explore how
               Ayurvedic care can support your well-being.
             </p>

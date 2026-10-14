@@ -15,30 +15,29 @@ export default function AppointmentBooking() {
   };
 
   return (
-    <section id="appointment" className="w-full bg-[#FAF8F3] py-14 sm:py-18 lg:py-20 border-b border-[#ECE6DB]">
+    <section id="appointment" className="w-full bg-[#FAF8F3] pt-2.5 sm:pt-3 pb-4 sm:pb-5 border-b border-[#ECE6DB]">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-2xl">
-          <span className="text-[12.5px] sm:text-[13px] font-bold tracking-[0.18em] uppercase text-[#A38146]">
+          <span className="text-[11.5px] sm:text-[12px] font-bold tracking-[1.5px] uppercase text-[#A58351]">
             Appointment
           </span>
-          <h2 className="mt-2.5 font-serif text-[32px] sm:text-[38px] lg:text-[42px] font-normal leading-[1.15] text-[#0D3226]">
+          <h2 className="mt-1.5 font-serif text-[32px] sm:text-[38px] lg:text-[42px] font-medium leading-[1.14] text-[#0D3226]">
             Plan your first visit.
           </h2>
-          <p className="mt-3 text-[15.5px] sm:text-[16.5px] font-normal leading-[1.6] text-[#55645B]">
-            Choose a service, pick a date and let us know if you'd prefer to visit
-            the clinic or consult online. We'll get back to you to confirm your
-            appointment.
+          <p className="mt-2 text-[14.5px] sm:text-[15px] font-medium leading-[1.6] text-[#4A5950] max-w-2xl">
+            Choose a service, pick a date and let us know if you&apos;d prefer to visit the
+            <br className="hidden sm:inline" /> clinic or consult online. We&apos;ll get back to you to confirm your appointment.
           </p>
         </div>
 
         {/* Interactive Booking Form Strip */}
-        <div className="mt-8 rounded-xl border border-[#DFD8CC] bg-[#F7F4EE] p-5 sm:p-6 shadow-2xs">
+        <div className="mt-4 sm:mt-5 rounded-xl border border-[#DFD8CC] bg-[#F7F4EE] p-5 sm:p-6 shadow-2xs">
           {submitted ? (
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-3 px-2 text-[#0D3226]">
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-[#164D3C]" />
-                <span className="text-[15px] font-medium">
+                <span className="text-[14.5px] font-medium">
                   Thank you! Your appointment request has been received. Our team will contact you shortly.
                 </span>
               </div>
@@ -61,7 +60,7 @@ export default function AppointmentBooking() {
                     value={service}
                     onChange={(e) => setService(e.target.value)}
                     required
-                    className="h-[44px] w-full appearance-none rounded-md border border-[#D6CFC3] bg-white px-3.5 pr-9 text-[13.5px] text-[#2C3B32] outline-none transition-all focus:border-[#0E382B] focus:ring-1 focus:ring-[#0E382B]"
+                    className="h-[44px] w-full appearance-none rounded-md border border-[#D6CFC3] bg-white px-3.5 pr-9 text-[13.5px] font-medium text-[#2C3B32] outline-none transition-all focus:border-[#0D3226] focus:ring-1 focus:ring-[#0D3226]"
                   >
                     <option value="">Select a service</option>
                     <option value="consultation">Ayurvedic Consultation</option>
@@ -84,7 +83,7 @@ export default function AppointmentBooking() {
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
                     required
-                    className="h-[44px] w-full rounded-md border border-[#D6CFC3] bg-white px-3.5 pr-9 text-[13.5px] text-[#2C3B32] outline-none transition-all focus:border-[#0E382B] focus:ring-1 focus:ring-[#0E382B]"
+                    className="h-[44px] w-full rounded-md border border-[#D6CFC3] bg-white px-3.5 pr-9 text-[13.5px] font-medium text-[#2C3B32] outline-none transition-all focus:border-[#0D3226] focus:ring-1 focus:ring-[#0D3226]"
                   />
                   <Calendar className="pointer-events-none absolute right-3 top-3.5 h-4 w-4 text-[#75847B]" />
                 </div>
@@ -96,23 +95,23 @@ export default function AppointmentBooking() {
                   Consultation type
                 </label>
                 <div className="flex h-[44px] items-center gap-4 px-1">
-                  <label className="inline-flex items-center gap-2 cursor-pointer text-[13.5px] font-normal text-[#2C3B32]">
+                  <label className="inline-flex items-center gap-2 cursor-pointer text-[13.5px] font-medium text-[#2C3B32]">
                     <input
                       type="radio"
                       name="consultationType"
                       checked={type === "clinic"}
                       onChange={() => setType("clinic")}
-                      className="h-4 w-4 text-[#0E382B] focus:ring-[#0E382B] accent-[#0E382B]"
+                      className="h-4 w-4 text-[#0D3226] focus:ring-[#0D3226] accent-[#0D3226]"
                     />
                     <span>Clinic visit</span>
                   </label>
-                  <label className="inline-flex items-center gap-2 cursor-pointer text-[13.5px] font-normal text-[#2C3B32]">
+                  <label className="inline-flex items-center gap-2 cursor-pointer text-[13.5px] font-medium text-[#2C3B32]">
                     <input
                       type="radio"
                       name="consultationType"
                       checked={type === "online"}
                       onChange={() => setType("online")}
-                      className="h-4 w-4 text-[#0E382B] focus:ring-[#0E382B] accent-[#0E382B]"
+                      className="h-4 w-4 text-[#0D3226] focus:ring-[#0D3226] accent-[#0D3226]"
                     />
                     <span>Online consultation</span>
                   </label>
@@ -123,7 +122,7 @@ export default function AppointmentBooking() {
               <div className="lg:col-span-3">
                 <button
                   type="submit"
-                  className="group flex h-[44px] w-full items-center justify-center gap-2 rounded-md bg-[#0A3527] px-6 text-[13.5px] sm:text-[14px] font-medium text-white shadow-xs transition-all hover:bg-[#124534] cursor-pointer"
+                  className="group flex h-[44px] w-full items-center justify-center gap-2 rounded-md bg-[#0A3527] px-6 text-[14px] font-semibold text-white shadow-xs transition-all hover:bg-[#124534] cursor-pointer"
                 >
                   <span>Request Appointment</span>
                   <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />

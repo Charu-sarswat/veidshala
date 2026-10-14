@@ -39,11 +39,11 @@ export default function SearchFilter({
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
               placeholder="Search articles..."
-              className="h-[46px] w-full rounded-md border border-[#D6CFC3] bg-white pl-11 pr-10 text-[14.5px] sm:text-[15px] text-[#2C3B32] placeholder-[#859289] outline-none transition-all focus:border-[#0E382B] focus:ring-1 focus:ring-[#0E382B]"
+              className="h-[46px] w-full rounded-md border border-[#D6CFC3] bg-white pl-11 pr-10 text-[14px] text-[#2C3B32] placeholder-[#859289] outline-none transition-all focus:border-[#123E30] focus:ring-1 focus:ring-[#123E30]"
             />
             <button
               type="submit"
-              className="absolute right-3 flex h-7 w-7 items-center justify-center text-[#718076] transition-colors hover:text-[#0E382B]"
+              className="absolute right-3 flex h-7 w-7 items-center justify-center text-[#718076] transition-colors hover:text-[#123E30]"
               aria-label="Submit search"
             >
               <ArrowRight className="h-4 w-4" />
@@ -60,10 +60,10 @@ export default function SearchFilter({
                 key={cat}
                 type="button"
                 onClick={() => onSelectCategory(cat)}
-                className={`rounded-full px-5.5 py-2.5 text-[14px] font-medium transition-all duration-200 cursor-pointer whitespace-nowrap ${
+                className={`rounded-full px-5.5 py-2.5 text-[13.5px] font-medium transition-all duration-200 cursor-pointer whitespace-nowrap ${
                   isActive
-                    ? "bg-[#0E382B] text-white shadow-xs"
-                    : "border border-[#D6CFC3] bg-white text-[#4D5D53] hover:border-[#0E382B] hover:text-[#0E382B]"
+                    ? "bg-[#123E30] text-white shadow-xs"
+                    : "border border-[#D6CFC3] bg-white text-[#62645F] hover:border-[#123E30] hover:text-[#123E30]"
                 }`}
               >
                 {cat}

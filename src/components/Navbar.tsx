@@ -13,10 +13,10 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/home", active: pathname === "/home" || pathname === "/" },
     { name: "About", href: "/about", active: pathname === "/about" },
-    { name: "Treatments", href: "/#treatments", active: false },
-    { name: "Panchakarma", href: "/#panchakarma", active: false },
+    { name: "Treatments", href: "/treatments", active: pathname === "/treatments" },
+    { name: "Panchakarma", href: "/panchakarma", active: pathname === "/panchakarma" },
     { name: "Products", href: "/#products", active: false },
-    { name: "Contact", href: "/#contact", active: false },
+    { name: "Contact", href: "/contact", active: pathname === "/contact" },
   ];
 
   return (
@@ -36,16 +36,16 @@ export default function Navbar() {
               className="relative inline-flex flex-col items-center py-1 transition-colors"
             >
               <span
-                className={`text-[15px] sm:text-[15.5px] leading-normal transition-colors ${
+                className={`text-[13.5px] sm:text-[14px] leading-normal transition-colors ${
                   item.active
-                    ? "font-semibold text-[#10382B]"
-                    : "font-medium text-[#54645C] hover:text-[#10382B]"
+                    ? "font-medium text-[#123E30]"
+                    : "font-medium text-[#62645F] hover:text-[#123E30]"
                 }`}
               >
                 {item.name}
               </span>
               {item.active && (
-                <span className="absolute -bottom-2 h-[2.5px] w-full rounded-full bg-[#4F7363]" />
+                <span className="absolute -bottom-2 h-[2px] w-full rounded-full bg-[#4F7363]" />
               )}
             </Link>
           ))}
@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="hidden sm:flex items-center">
           <Link
             href="/#book"
-            className="group inline-flex items-center gap-2.5 rounded-md bg-[#0A3527] px-6 py-2.5 text-[14px] font-medium text-white shadow-xs transition-all hover:bg-[#124534]"
+            className="group inline-flex items-center gap-2 rounded-md bg-[#0A3527] px-5.5 py-2.5 text-[14px] font-semibold text-white shadow-xs transition-all hover:bg-[#124534]"
           >
             <span>Book Appointment</span>
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
@@ -80,10 +80,10 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
-              className={`block py-1.5 text-sm ${
+              className={`block py-1.5 text-[13.5px] ${
                 item.active
-                  ? "font-semibold text-[#10382B]"
-                  : "font-medium text-[#54645C]"
+                  ? "font-medium text-[#123E30]"
+                  : "font-medium text-[#62645F]"
               }`}
             >
               {item.name}
@@ -93,7 +93,7 @@ export default function Navbar() {
             <Link
               href="/#book"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex w-full items-center justify-center gap-2 rounded-md bg-[#0A3527] py-2.5 text-xs font-medium text-white"
+              className="flex w-full items-center justify-center gap-2 rounded-md bg-[#0A3527] py-2.5 text-[13.5px] font-semibold text-white"
             >
               <span>Book Appointment</span>
               <ArrowRight className="h-3.5 w-3.5" />

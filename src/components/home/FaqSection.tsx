@@ -9,7 +9,7 @@ interface FaqItem {
 }
 
 export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs: FaqItem[] = [
     {
@@ -40,20 +40,20 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="faqs" className="w-full bg-[#FAF7F2] py-14 sm:py-18 lg:py-20 border-b border-[#ECE6DB]">
+    <section id="faqs" className="w-full bg-[#FAF7F2] pt-2.5 sm:pt-3 pb-6 sm:pb-8 lg:pb-9 border-b border-[#ECE6DB]">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14 xl:gap-16">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12 xl:gap-16">
           {/* Left Column: Heading and Description */}
           <div className="lg:col-span-5 flex flex-col justify-start">
-            <span className="text-[12.5px] sm:text-[13px] font-bold tracking-[0.18em] uppercase text-[#A38146]">
+            <span className="text-[11.5px] sm:text-[12px] font-bold tracking-[1.5px] uppercase text-[#A58351]">
               FAQs
             </span>
-            <h2 className="mt-2.5 font-serif text-[32px] sm:text-[38px] lg:text-[42px] font-normal leading-[1.15] text-[#0D3226]">
+            <h2 className="mt-1.5 font-serif text-[32px] sm:text-[38px] lg:text-[42px] font-medium leading-[1.14] text-[#0D3226]">
               Before your consultation.
             </h2>
-            <p className="mt-3 text-[15.5px] sm:text-[16.5px] font-normal leading-[1.6] text-[#55645B] max-w-sm">
+            <p className="mt-2 text-[14.5px] sm:text-[15px] font-medium leading-[1.6] text-[#4A5950] max-w-sm">
               Find quick answers to common questions about our consultations,
-              therapies and products.
+              <br className="hidden sm:inline" /> therapies and products.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function FaqSection() {
             {faqs.map((faq, idx) => {
               const isOpen = openIndex === idx;
               return (
-                <div key={idx} className="py-4.5 sm:py-5">
+                <div key={idx} className="py-3.5 sm:py-4">
                   <button
                     onClick={() => toggle(idx)}
                     className="flex w-full items-center justify-between gap-4 text-left cursor-pointer transition-colors hover:text-[#0D3226]"
@@ -81,7 +81,7 @@ export default function FaqSection() {
                   </button>
 
                   {isOpen && (
-                    <div className="mt-3 pr-8 text-[14.5px] font-normal leading-[1.65] text-[#55645B] animate-fadeIn">
+                    <div className="mt-2.5 pr-8 text-[13.5px] sm:text-[14px] font-medium leading-[1.6] text-[#4A5950] animate-fadeIn">
                       <p>{faq.answer}</p>
                     </div>
                   )}

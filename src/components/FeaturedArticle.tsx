@@ -29,19 +29,19 @@ export default function FeaturedArticle() {
             {/* Article Content */}
             <div className="relative z-10">
               {/* Eyebrow */}
-              <span className="text-[13px] sm:text-[13.5px] font-bold tracking-[0.18em] uppercase text-[#B78B45]">
+              <span className="text-[11.5px] font-bold tracking-[1.4px] uppercase text-[#A58351]">
                 Featured Article
               </span>
 
               {/* Title */}
-              <h2 className="mt-3 font-serif text-[32px] sm:text-[38px] lg:text-[42px] xl:text-[45px] font-normal leading-[1.15] text-[#0E382B]">
+              <h2 className="mt-3 font-serif text-[29px] sm:text-[36px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.015em] text-[#123E30]">
                 Your first Ayurvedic
                 <br className="hidden sm:inline" />{" "}
                 consultation: what to prepare
               </h2>
 
               {/* Excerpt */}
-              <p className="mt-4 text-[16px] sm:text-[17.5px] lg:text-[18px] leading-[1.65] text-[#5A6860] max-w-[560px]">
+              <p className="mt-4 text-[15px] sm:text-[16px] font-normal leading-[1.6] text-[#62645F] max-w-[560px]">
                 {featuredArticle.excerpt}
               </p>
 
@@ -49,7 +49,7 @@ export default function FeaturedArticle() {
               <div className="mt-7">
                 <Link
                   href={`/#article-${featuredArticle.id}`}
-                  className="group inline-flex items-center gap-2.5 rounded-md bg-[#0E382B] px-7 py-3 text-[14.5px] sm:text-[15px] font-medium text-white transition-all hover:bg-[#164D3C]"
+                  className="group inline-flex items-center gap-2.5 rounded-md bg-[#123E30] px-7 py-3 text-[14px] font-semibold text-white transition-all hover:bg-[#1b5341]"
                 >
                   <span>Read Article</span>
                   <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />

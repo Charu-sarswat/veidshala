@@ -24,13 +24,13 @@ export default function HeroJournal() {
 
         {/* Headline & Subtitle sitting directly under Breadcrumb with decreased gap */}
         <div className="mt-2.5 sm:mt-3 max-w-xl lg:max-w-2xl">
-          <h1 className="font-serif text-[48px] sm:text-[56px] lg:text-[62px] xl:text-[66px] font-normal leading-[1.06] tracking-[-0.018em] text-[#0F382B]">
+          <h1 className="font-serif text-[34px] sm:text-[42px] lg:text-[52px] font-normal leading-[1.08] tracking-[-0.015em] text-[#123E30]">
             The Vaidhyashala
             <br />
             Health Journal
-            <span className="text-[#BA8842]">.</span>
+            <span className="text-[#A58351]">.</span>
           </h1>
-          <p className="mt-4 sm:mt-5 text-[22px] sm:text-[25px] lg:text-[28px] font-normal leading-[1.4] text-[#526359] max-w-[580px] lg:max-w-[640px]">
+          <p className="mt-4 sm:mt-5 text-[18px] sm:text-[20px] lg:text-[22px] font-normal leading-[1.5] text-[#62645F] max-w-[580px] lg:max-w-[640px]">
             Explore Ayurveda, therapies and
             <br className="hidden sm:inline" />{" "}
             thoughtful everyday routines.

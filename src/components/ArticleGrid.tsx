@@ -22,10 +22,10 @@ export default function ArticleGrid({ articles }: ArticleGridProps) {
     <section className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8 pt-2.5 sm:pt-3 pb-8 sm:pb-10">
       {/* Section Header */}
       <div className="mb-8 sm:mb-10">
-        <span className="text-[13px] sm:text-[14px] font-bold tracking-[0.18em] uppercase text-[#A38146]">
+        <span className="text-[11.5px] font-bold tracking-[1.4px] uppercase text-[#A58351]">
           Explore the Journal
         </span>
-        <h2 className="mt-2.5 font-serif text-[30px] sm:text-[38px] lg:text-[44px] font-normal leading-[1.15] text-[#0D3226]">
+        <h2 className="mt-2.5 font-serif text-[29px] sm:text-[34px] lg:text-[40px] font-normal leading-[1.15] tracking-[-0.015em] text-[#123E30]">
           Articles for a more conscious, balanced life.
         </h2>
       </div>
@@ -38,19 +38,19 @@ export default function ArticleGrid({ articles }: ArticleGridProps) {
           ))}
         </div>
       ) : (
-        <div className="py-12 text-center text-base text-[#758279]">
+        <div className="py-12 text-center text-base text-[#62645F]">
           No articles found matching your criteria.
         </div>
       )}
 
       {/* Editorial Notice & Load More Action */}
       <div className="mt-14 flex flex-col items-center justify-center space-y-4">
-        <p className="text-center text-[13px] text-[#7E8A81]">
+        <p className="text-center text-[12.5px] text-[#62645F]">
           Illustrative article previews — editorial content to be finalised.
         </p>
         <button
           onClick={handleLoadMore}
-          className="group inline-flex items-center gap-2.5 rounded-md border border-[#D0C9BD] bg-white px-8 py-3.5 text-[14px] font-medium text-[#0E382B] shadow-sm transition-all hover:border-[#0E382B] hover:bg-[#F9F7F2]"
+          className="group inline-flex items-center gap-2.5 rounded-md border border-[#D0C9BD] bg-white px-8 py-3.5 text-[14px] font-semibold text-[#123E30] shadow-sm transition-all hover:border-[#123E30] hover:bg-[#F9F7F2]"
         >
           <span>Load More Articles</span>
           <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />

@@ -2,40 +2,41 @@ import React from "react";
 
 export default function DedicatedTeam() {
   return (
-    <section className="w-full bg-[#FAF7F2] py-14 sm:py-18 lg:py-20 border-b border-[#ECE6DB]">
+    <section className="w-full bg-[#FAF7F2] pt-2.5 sm:pt-3 pb-2.5 sm:pb-3 border-b border-[#ECE6DB]">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14 xl:gap-16">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12 xl:gap-16">
           {/* Left Column: Heading and Text */}
           <div className="lg:col-span-5 flex flex-col justify-center">
-            <span className="text-[12.5px] sm:text-[13px] font-bold tracking-[0.18em] uppercase text-[#A38146]">
+            <span className="text-[11.5px] sm:text-[12px] font-bold tracking-[1.5px] uppercase text-[#A58351]">
               The People Behind Your Care
             </span>
 
-            <h2 className="mt-3 font-serif text-[32px] sm:text-[38px] lg:text-[42px] font-normal leading-[1.15] text-[#0D3226]">
+            <h2 className="mt-1.5 font-serif text-[32px] sm:text-[38px] lg:text-[42px] font-medium leading-[1.14] text-[#0D3226]">
               A dedicated team,
               <br />
               by your side.
             </h2>
 
-            <p className="mt-4 text-[15.5px] sm:text-[16px] font-normal leading-[1.65] text-[#55645B] max-w-lg">
-              Our team of Ayurvedic doctors, Panchakarma therapists and yoga &
-              care professionals work together to provide integrated and
-              compassionate care. We take time to understand your needs and
-              support you at every step of your health journey.
+            <p className="mt-2.5 text-[14.5px] sm:text-[15px] font-medium leading-[1.65] text-[#4A5950] max-w-lg">
+              Our team of Ayurvedic doctors, Panchakarma
+              <br className="hidden sm:inline" /> therapists and yoga & care professionals work
+              <br className="hidden sm:inline" /> together to provide integrated and compassionate
+              <br className="hidden sm:inline" /> care. We take time to understand your needs and
+              <br className="hidden sm:inline" /> support you at every step of your health journey.
             </p>
           </div>
 
           {/* Right Column: Clinical Team Photo */}
           <div className="lg:col-span-7">
-            <div className="relative overflow-hidden rounded-2xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-sm">
+            <div className="relative overflow-hidden rounded-xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-xs">
               <img
-                src="/lp.png"
+                src="/about/i4.png"
                 alt="The Vaidhyashala Clinical Team of Ayurvedic Doctors and Practitioners"
-                className="w-full h-auto max-h-[480px] object-cover object-center"
+                className="w-full h-auto max-h-[460px] object-cover object-center"
               />
             </div>
             <div className="mt-1.5 text-right text-[11px] italic text-[#8C988F]">
-              Illustrative Imagery
+              Illustrative imagery
             </div>
           </div>
         </div>

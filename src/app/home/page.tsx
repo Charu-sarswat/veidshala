@@ -10,6 +10,7 @@ import ConcernCategories from "@/components/home/ConcernCategories";
 import ProductsBanner from "@/components/home/ProductsBanner";
 import AppointmentBooking from "@/components/home/AppointmentBooking";
 import FaqSection from "@/components/home/FaqSection";
+import ConsultationCTA from "@/components/ConsultationCTA";
 import Footer from "@/components/Footer";
 
 export default function HomePage() {
@@ -43,6 +44,9 @@ export default function HomePage() {
 
         {/* 8. FAQs: "Before your consultation." */}
         <FaqSection />
+
+        {/* 9. Pre-Footer Banner: Same ConsultationCTA as Health Journal page */}
+        <ConsultationCTA />
       </main>
 
       {/* Footer */}

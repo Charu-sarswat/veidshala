@@ -25,14 +25,14 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         </div>
 
         {/* Title */}
-        <h3 className="mt-4 font-serif text-[22px] sm:text-[24px] font-medium leading-[1.25] text-[#0D3226] group-hover:text-[#185340] transition-colors">
+        <h3 className="mt-4 font-serif text-[20px] sm:text-[22px] lg:text-[23px] font-normal leading-[1.2] text-[#123E30] group-hover:text-[#1e5845] transition-colors">
           <Link href={`/#article-${article.id}`}>
             {article.title}
           </Link>
         </h3>
 
         {/* Excerpt */}
-        <p className="mt-2.5 text-[15px] sm:text-[15.5px] leading-[1.6] text-[#55645B]">
+        <p className="mt-2.5 text-[14px] sm:text-[14.5px] font-normal leading-[1.55] text-[#62645F]">
           {article.excerpt}
         </p>
       </div>
@@ -41,9 +41,9 @@ export default function ArticleCard({ article }: ArticleCardProps) {
       <div className="mt-5 pt-1">
         <Link
           href={`/#article-${article.id}`}
-          className="inline-flex items-center gap-1.5 text-[14px] sm:text-[14.5px] font-semibold text-[#0E382B] transition-colors hover:text-[#195642]"
+          className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#123E30] transition-colors hover:text-[#1e5845]"
         >
-          <span className="border-b-[1.5px] border-[#C5A969] pb-0.5">Read Article</span>
+          <span className="border-b-[1.5px] border-[#A58351] pb-0.5">Read Article</span>
           <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
         </Link>
       </div>

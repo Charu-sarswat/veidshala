@@ -7,14 +7,14 @@ export default function Breadcrumb() {
       <ol className="flex items-center space-x-2 text-[12.5px] font-normal">
         <li>
           <Link
-            href="/"
-            className="text-[#A3733F] transition-colors hover:text-[#0E3528]"
+            href="/home"
+            className="text-[#A58351] transition-colors hover:text-[#123E30]"
           >
             Home
           </Link>
         </li>
         <li className="text-[#9FA9A2]">/</li>
-        <li className="text-[#516157] font-normal" aria-current="page">
+        <li className="text-[#62645F] font-normal" aria-current="page">
           Health Journal
         </li>
       </ol>
