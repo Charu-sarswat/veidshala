@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
 import ScrollbarManager from "@/components/ScrollbarManager";
 import "./globals.css";
