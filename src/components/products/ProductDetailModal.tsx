@@ -46,11 +46,11 @@ export default function ProductDetailModal({
   // Gallery images - fallback to existing product image or placeholder
   const defaultImages = [
     product?.images?.[0] ||
-      "/product/vaidhyashala_product_page_images/05_ayurvedic_massage_oil.jpg",
+      "/product/vaidhyashala_product_page_images/05_ayurvedic_massage_oil.webp",
     product?.images?.[1] ||
-      "/product/vaidhyashala_product_page_images/05_ayurvedic_massage_oil.jpg",
+      "/product/vaidhyashala_product_page_images/05_ayurvedic_massage_oil.webp",
     product?.images?.[2] ||
-      "/product/vaidhyashala_product_page_images/14_product_guidance_consultation.jpg",
+      "/product/vaidhyashala_product_page_images/14_product_guidance_consultation.webp",
   ];
 
   const [activeImageIndex, setActiveImageIndex] = useState(0);

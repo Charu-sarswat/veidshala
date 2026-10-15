@@ -9,7 +9,7 @@ export default function BeforeSharingBanner() {
         {/* Main Banner Image */}
         <div className="w-full">
           <img
-            src="/privicy/02_before_sharing_information.png"
+            src="/privicy/02_before_sharing_information.webp"
             alt="Before sharing information - A few things to keep in mind when using our website forms"
             className="w-full h-auto object-contain"
           />

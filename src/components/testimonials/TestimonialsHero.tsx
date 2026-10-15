@@ -12,7 +12,7 @@ export default function TestimonialsHero({ heroImageSrc }: TestimonialsHeroProps
         {/* Hero Background Image: clinic-reception-hero.jpg */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/testimonial/clinic-reception-hero.jpg"
+            src="/testimonial/clinic-reception-hero.webp"
             alt="Vaidhyashala Clinic Reception"
             className="h-full w-full object-cover object-right"
           />

@@ -9,7 +9,7 @@ export default function BeforeSubmittingBanner() {
         {/* Main Banner Image */}
         <div className="w-full">
           <img
-            src="/privicy/01_before_submitting_request.png"
+            src="/privicy/01_before_submitting_request.webp"
             alt="Before submitting a request - A few things to keep in mind when using our website forms"
             className="w-full h-auto object-contain"
           />

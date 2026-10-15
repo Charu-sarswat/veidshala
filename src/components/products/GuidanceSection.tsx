@@ -14,7 +14,7 @@ export default function GuidanceSection() {
             <div className="relative aspect-[16/9] lg:aspect-auto w-full h-full min-h-[220px] overflow-hidden rounded-xl border border-[#E5DFD3] bg-[#FAF8F3] shadow-2xs">
               {!imageError ? (
                 <img
-                  src="/product/vaidhyashala_product_page_images/14_product_guidance_consultation.jpg"
+                  src="/product/vaidhyashala_product_page_images/14_product_guidance_consultation.webp"
                   alt="Doctor consultation for Ayurvedic medicine"
                   className="h-full w-full object-cover object-[center_30%]"
                   onError={() => setImageError(true)}
@@ -50,7 +50,7 @@ export default function GuidanceSection() {
             {/* Feature Badges Image: pr1.png (Tight Gap) */}
             <div className="mt-3 sm:mt-3.5 w-full">
               <img
-                src="/product/vaidhyashala_product_page_images/pr1.png"
+                src="/product/vaidhyashala_product_page_images/pr1.webp"
                 alt="Product information, Pack & availability, Doctor guidance"
                 className="w-full h-auto object-contain block"
               />

@@ -25,7 +25,7 @@ export default function FeedbackForm() {
       {/* Botanical leaf watermark in the background of the left area */}
       <div className="pointer-events-none absolute -bottom-10 -left-10 sm:-bottom-16 sm:-left-16 w-[360px] sm:w-[460px] lg:w-[540px] opacity-25 lg:opacity-30 select-none z-0">
         <img
-          src="/leaf.png"
+          src="/leaf.webp"
           alt=""
           className="w-full h-auto object-contain"
         />

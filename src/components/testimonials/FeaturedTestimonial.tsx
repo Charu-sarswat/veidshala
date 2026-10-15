@@ -14,7 +14,7 @@ export default function FeaturedTestimonial({ imageSrc }: FeaturedTestimonialPro
             <div className="sm:col-span-5 lg:col-span-3">
               <div className="relative aspect-[4/3.7] sm:aspect-square w-full overflow-hidden rounded-xl sm:rounded-2xl shadow-2xs">
                 <img
-                  src={imageSrc || "/testimonial/testimonial-woman-cream-outfit.jpg"}
+                  src={imageSrc || "/testimonial/testimonial-woman-cream-outfit.webp"}
                   alt="Anita S."
                   className="h-full w-full object-cover object-center"
                 />

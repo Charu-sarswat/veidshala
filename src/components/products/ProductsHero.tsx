@@ -8,7 +8,7 @@ export default function ProductsHero() {
       {/* Panoramic Hero Background Image: 13_product_page_hero.jpg */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/product/vaidhyashala_product_page_images/13_product_page_hero.jpg"
+          src="/product/vaidhyashala_product_page_images/13_product_page_hero.webp"
           alt="Ayurveda for your everyday care - Vaidhyashala product collection"
           className="h-full w-full object-cover object-right"
         />

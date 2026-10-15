@@ -28,7 +28,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Classical Ayurvedic tablet formulations.",
-    imageSrc: "/product/vaidhyashala_product_page_images/01_ayurvedic_tablets.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/01_ayurvedic_tablets.webp",
   },
   {
     id: "p2",
@@ -43,7 +43,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Herbal syrup formulations in convenient liquid form.",
-    imageSrc: "/product/vaidhyashala_product_page_images/02_ayurvedic_syrup.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/02_ayurvedic_syrup.webp",
   },
   {
     id: "p3",
@@ -58,7 +58,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Plant-based herbal capsule formulations.",
-    imageSrc: "/product/vaidhyashala_product_page_images/03_herbal_capsules.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/03_herbal_capsules.webp",
   },
   {
     id: "p4",
@@ -73,7 +73,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Traditional herbal powders for everyday use.",
-    imageSrc: "/product/vaidhyashala_product_page_images/04_herbal_powder.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/04_herbal_powder.webp",
   },
   {
     id: "p5",
@@ -88,7 +88,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Traditional herbal oils for abhyanga and external use.",
-    imageSrc: "/product/vaidhyashala_product_page_images/05_ayurvedic_massage_oil.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/05_ayurvedic_massage_oil.webp",
   },
   {
     id: "p6",
@@ -103,7 +103,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Herbal hair care oil formulations.",
-    imageSrc: "/product/vaidhyashala_product_page_images/06_hair_care_oil.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/06_hair_care_oil.webp",
   },
   {
     id: "p7",
@@ -118,7 +118,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Herbal oils for daily skin care.",
-    imageSrc: "/product/vaidhyashala_product_page_images/07_herbal_skin_care_oil.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/07_herbal_skin_care_oil.webp",
   },
   {
     id: "p8",
@@ -133,7 +133,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Herbal powder for cleansing and refreshing.",
-    imageSrc: "/product/vaidhyashala_product_page_images/08_herbal_bath_powder.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/08_herbal_bath_powder.webp",
   },
   {
     id: "p9",
@@ -148,7 +148,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Herbal formulations for daily face care.",
-    imageSrc: "/product/vaidhyashala_product_page_images/09_herbal_face_care.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/09_herbal_face_care.webp",
   },
   {
     id: "p10",
@@ -163,7 +163,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Gentle herbal cleanser for hair care.",
-    imageSrc: "/product/vaidhyashala_product_page_images/10_herbal_hair_cleanser.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/10_herbal_hair_cleanser.webp",
   },
   {
     id: "p11",
@@ -178,7 +178,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Aromatic herbal tea blends.",
-    imageSrc: "/product/vaidhyashala_product_page_images/11_herbal_tea.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/11_herbal_tea.webp",
   },
   {
     id: "p12",
@@ -193,7 +193,7 @@ const allProducts: Product[] = [
       </>
     ),
     searchText: "Everyday wellness support products.",
-    imageSrc: "/product/vaidhyashala_product_page_images/12_wellness_essentials.jpg",
+    imageSrc: "/product/vaidhyashala_product_page_images/12_wellness_essentials.webp",
   },
 ];
 
@@ -360,7 +360,7 @@ export default function ProductCatalog() {
             images: [
               selectedProduct.imageSrc,
               selectedProduct.imageSrc,
-              "/product/vaidhyashala_product_page_images/14_product_guidance_consultation.jpg",
+              "/product/vaidhyashala_product_page_images/14_product_guidance_consultation.webp",
             ],
           }}
           onEnquire={() => {

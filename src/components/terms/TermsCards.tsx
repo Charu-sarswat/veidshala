@@ -6,7 +6,7 @@ export default function TermsCards() {
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         <div className="w-full">
           <img
-            src="/privicy/03_website_appointment_product_cards.png"
+            src="/privicy/03_website_appointment_product_cards.webp"
             alt="Website information, Appointment requests, Product catalogue"
             className="w-full h-auto object-contain"
           />

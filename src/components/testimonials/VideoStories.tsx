@@ -5,7 +5,7 @@ export default function VideoStories() {
     <section className="relative overflow-hidden w-full bg-[#FAF8F3] border-b border-[#ECE6DB]">
       <div className="relative w-full">
         <img
-          src="/testimonial/te2.png"
+          src="/testimonial/te2.webp"
           alt="Patient stories, in their own words - A space for consented patient video feedback"
           className="w-full h-auto block"
         />

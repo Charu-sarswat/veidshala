@@ -6,7 +6,7 @@ export default function PrivacyCards() {
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         <div className="w-full">
           <img
-            src="/privicy/04_information_sharing_choices_cards.png"
+            src="/privicy/04_information_sharing_choices_cards.webp"
             alt="Information you share, Why it is requested, Your choices"
             className="w-full h-auto object-contain"
           />
