@@ -7,7 +7,7 @@ export default function AboutHero() {
       {/* Panoramic Hero Background Image (i1.png) */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/about/i1.png"
+          src="/about/i1.webp"
           alt="Vaidhyashala Clinic - Rooted in Ayurveda. Dedicated to your care."
           className="h-full w-full object-cover object-right"
         />

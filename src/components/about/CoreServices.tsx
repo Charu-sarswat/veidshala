@@ -12,7 +12,7 @@ export default function CoreServices() {
           <br className="hidden sm:inline" /> your individual needs.
         </>
       ),
-      imageSrc: "/about/i3.png",
+      imageSrc: "/about/i3.webp",
       imageAlt: "Ayurvedic Doctor Consultation",
     },
     {
@@ -25,7 +25,7 @@ export default function CoreServices() {
           <br className="hidden sm:inline" /> suitability.
         </>
       ),
-      imageSrc: "/a1.png",
+      imageSrc: "/a1.webp",
       imageAlt: "Panchakarma Shirodhara Therapy",
     },
     {
@@ -37,7 +37,7 @@ export default function CoreServices() {
           <br className="hidden sm:inline" /> long-term well-being.
         </>
       ),
-      imageSrc: "/a3.png",
+      imageSrc: "/a3.webp",
       imageAlt: "Yoga and Meditation Practice",
     },
     {
@@ -50,7 +50,7 @@ export default function CoreServices() {
           <br className="hidden sm:inline" /> treatment and daily health.
         </>
       ),
-      imageSrc: "/a5.png",
+      imageSrc: "/a5.webp",
       imageAlt: "Authentic Ayurvedic Medicines and Products",
     },
   ];

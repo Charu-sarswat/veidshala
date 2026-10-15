@@ -16,7 +16,7 @@ export const featuredArticle: Article = {
   category: "Clinic Guidance",
   imageLabel: "Featured Article Image: Doctor consultation with patient",
   imageAlt: "Ayurvedic doctor in consultation with a patient in a serene clinic room",
-  imageSrc: "/h2.png",
+  imageSrc: "/h2.webp",
 };
 
 export const initialArticles: Article[] = [
@@ -28,7 +28,7 @@ export const initialArticles: Article[] = [
     category: "Panchakarma",
     imageLabel: "Article 1 Image: Traditional Shirodhara therapy",
     imageAlt: "Ayurvedic practitioner administering soothing Shirodhara oil therapy",
-    imageSrc: "/a1.png",
+    imageSrc: "/a1.webp",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const initialArticles: Article[] = [
     category: "Clinic Guidance",
     imageLabel: "Article 2 Image: Discussion with Ayurvedic physician",
     imageAlt: "Patient having a detailed treatment planning discussion with the doctor",
-    imageSrc: "/a2.png",
+    imageSrc: "/a2.webp",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ export const initialArticles: Article[] = [
     category: "Yoga & Lifestyle",
     imageLabel: "Article 3 Image: Calm meditation and yoga asanas",
     imageAlt: "Woman practicing seated yoga and mindfulness meditation in a peaceful room",
-    imageSrc: "/a3.png",
+    imageSrc: "/a3.webp",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const initialArticles: Article[] = [
     category: "Yoga & Lifestyle",
     imageLabel: "Article 4 Image: Wholesome Ayurvedic meal and herbal decoction",
     imageAlt: "Nutritious Ayurvedic herbal meal, traditional brass cup, and medicinal herbs",
-    imageSrc: "/a4.png",
+    imageSrc: "/a4.webp",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ export const initialArticles: Article[] = [
     category: "Ayurveda",
     imageLabel: "Article 5 Image: Ayurvedic herbal oils and medicine packaging",
     imageAlt: "Bottles of Ayurvedic herbal oils and botanical formulations with labels",
-    imageSrc: "/a5.png",
+    imageSrc: "/a5.webp",
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ export const initialArticles: Article[] = [
     category: "Clinic Guidance",
     imageLabel: "Article 6 Image: Ayurvedic treatment room and brass bowls",
     imageAlt: "Serene Ayurvedic clinic therapy bed prepared with traditional brass singing bowls",
-    imageSrc: "/a6.png",
+    imageSrc: "/a6.webp",
   },
 ];
 

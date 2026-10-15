@@ -8,10 +8,12 @@ export default function Footer() {
     { name: "About Us", href: "/about" },
     { name: "Treatments", href: "/treatments" },
     { name: "Panchakarma", href: "/panchakarma" },
-    { name: "Products", href: "/#products" },
+    { name: "Products", href: "/products" },
     { name: "Contact", href: "/contact" },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms & Conditions", href: "/terms" },
     { name: "Blog", href: "/#blog" },
-    { name: "Testimonials", href: "/#testimonials" },
+    { name: "Patient Testimonials", href: "/testimonials" },
     { name: "FAQs", href: "/#faqs" },
   ];
 
@@ -32,7 +34,7 @@ export default function Footer() {
             {/* Official Circular Logo */}
             <div className="relative flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full overflow-hidden border border-[#235848]/60 bg-[#FAF8F3] shadow-xs mb-3">
               <img
-                src="/logo.jpeg"
+                src="/logo.webp"
                 alt="Vaidhyashala Logo"
                 className="h-full w-full object-cover scale-[1.02]"
               />
@@ -171,7 +173,7 @@ export default function Footer() {
             </Link>
             <span>·</span>
             <Link href="/terms" className="hover:text-white transition-colors">
-              Terms
+              Terms of Use
             </Link>
           </div>
         </div>

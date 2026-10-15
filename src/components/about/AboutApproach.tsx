@@ -42,7 +42,7 @@ export default function AboutApproach() {
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-xs">
               <img
-                src="/about/i2.png"
+                src="/about/i2.webp"
                 alt="Ayurvedic doctor in consultation with patient"
                 className="w-full h-auto max-h-[460px] object-cover object-center"
               />

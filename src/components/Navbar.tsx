@@ -15,7 +15,7 @@ export default function Navbar() {
     { name: "About", href: "/about", active: pathname === "/about" },
     { name: "Treatments", href: "/treatments", active: pathname === "/treatments" },
     { name: "Panchakarma", href: "/panchakarma", active: pathname === "/panchakarma" },
-    { name: "Products", href: "/#products", active: false },
+    { name: "Products", href: "/products", active: pathname === "/products" },
     { name: "Contact", href: "/contact", active: pathname === "/contact" },
   ];
 

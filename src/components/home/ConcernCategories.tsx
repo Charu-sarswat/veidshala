@@ -22,7 +22,7 @@ export default function ConcernCategories() {
         {/* Health Concerns Graphic Image (t1.png) */}
         <div className="mt-3.5 sm:mt-4 w-full flex justify-center items-center">
           <img
-            src="/treatment/t1.png"
+            src="/treatment/t1.webp"
             alt="Explore our approach to common health concerns with Ayurvedic care and lifestyle guidance"
             className="w-full h-auto object-contain max-w-[1360px]"
           />

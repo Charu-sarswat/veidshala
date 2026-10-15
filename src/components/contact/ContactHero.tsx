@@ -9,7 +9,7 @@ export default function ContactHero() {
       {/* Panoramic Hero Background Image: /contct/c1.png */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/contct/c1.png"
+          src="/contct/c1.webp"
           alt="Vaidhyashala Clinic Reception - Let's begin with a conversation"
           className="h-full w-full object-cover object-right"
         />

@@ -16,7 +16,7 @@ export default function TherapyPlanConversation() {
       {/* Decorative leaf branch in bottom right corner */}
       <div className="pointer-events-none absolute -bottom-10 -right-8 z-0 hidden md:block w-52 lg:w-64 opacity-80">
         <img
-          src="/cont.png"
+          src="/cont.webp"
           alt=""
           aria-hidden="true"
           className="w-full h-auto object-contain"
@@ -29,7 +29,7 @@ export default function TherapyPlanConversation() {
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-xs">
               <img
-                src="/panchakarma/p2.png"
+                src="/panchakarma/p2.webp"
                 alt="Ayurvedic doctor in consultation discussing therapy plan"
                 className="w-full h-auto max-h-[460px] object-cover object-center"
               />

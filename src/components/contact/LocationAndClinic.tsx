@@ -25,7 +25,7 @@ export default function LocationAndClinic() {
             <div className="mt-3.5 flex-1 flex flex-col justify-center">
               <div className="relative overflow-hidden rounded-xl border border-[#DFD8CC] bg-[#FAF8F3] shadow-2xs">
                 <img
-                  src="/contct/c4.png"
+                  src="/contct/c4.webp"
                   alt="Vaidhyashala Clinic Location Map"
                   className="w-full h-auto object-cover object-center block"
                 />
@@ -42,7 +42,7 @@ export default function LocationAndClinic() {
           <div className="lg:col-span-6 flex flex-col justify-end">
             <div className="relative overflow-hidden rounded-xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-xs min-h-[320px] sm:min-h-[360px] lg:min-h-full flex items-end">
               <img
-                src="/contct/c2.png"
+                src="/contct/c2.webp"
                 alt="A welcoming space for your care at Vaidhyashala"
                 className="absolute inset-0 h-full w-full object-cover object-center"
               />

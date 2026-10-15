@@ -10,7 +10,7 @@ export default function ProductsBanner() {
       {/* Background Banner Image: /home/i2.png */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/home/i2.png"
+          src="/home/i2.webp"
           alt="Authentic Ayurvedic medicines, therapy oils and wellness formulations"
           className="h-full w-full object-cover object-right"
         />
@@ -42,7 +42,7 @@ export default function ProductsBanner() {
           {/* CTA Button */}
           <div className="mt-6">
             <Link
-              href="/#products"
+              href="/products"
               className="group inline-flex items-center gap-2.5 rounded-md bg-[#0A3527] px-6 sm:px-7 py-3 text-[14px] font-semibold text-white shadow-xs transition-all hover:bg-[#124534]"
             >
               <span>Explore Products</span>

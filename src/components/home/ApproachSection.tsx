@@ -27,7 +27,7 @@ export default function ApproachSection() {
           <div className="lg:col-span-6">
             <div className="relative overflow-hidden rounded-xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-xs">
               <img
-                src="/a1.png"
+                src="/a1.webp"
                 alt="Traditional Ayurvedic Shirodhara Therapy and Treatment"
                 className="w-full h-auto max-h-[480px] object-cover object-center"
               />

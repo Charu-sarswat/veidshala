@@ -9,7 +9,7 @@ export default function ContactCTA() {
     <section className="relative w-full overflow-hidden bg-[#072B20] text-white py-5 sm:py-6 lg:py-7 border-t border-[#124233]">
       {/* Subtle background decorative leaf illustration */}
       <div className="pointer-events-none absolute -right-12 -top-12 z-0 h-64 w-64 opacity-10">
-        <img src="/cont.png" alt="" aria-hidden="true" className="h-full w-full object-contain" />
+        <img src="/cont.webp" alt="" aria-hidden="true" className="h-full w-full object-contain" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">

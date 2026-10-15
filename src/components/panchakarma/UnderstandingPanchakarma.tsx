@@ -19,7 +19,7 @@ export default function UnderstandingPanchakarma() {
         {/* 3 Step Visual Flow: /panchakarma/i2.png */}
         <div className="mt-3 sm:mt-3.5 w-full flex justify-center items-center">
           <img
-            src="/panchakarma/i2.png"
+            src="/panchakarma/i2.webp"
             alt="Understanding Panchakarma: 01 Preparation, 02 Selected procedures, 03 Aftercare"
             className="w-full h-auto object-contain max-w-[1360px]"
           />

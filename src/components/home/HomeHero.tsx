@@ -10,7 +10,7 @@ export default function HomeHero() {
       {/* Panoramic Hero Background Image: /home/h1.png */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/home/h1.png"
+          src="/home/h1.webp"
           alt="Vaidhyashala Clinic Reception and Lounge - Your care. Our Ayurvedic approach."
           className="h-full w-full object-cover object-right"
         />

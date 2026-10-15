@@ -155,7 +155,7 @@ export default function EnquiryAndVisit() {
           {/* Right Column: Plan your visit card using /contct/c3.png */}
           <div className="lg:col-span-5 flex flex-col rounded-2xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-2xs overflow-hidden">
             <img
-              src="/contct/c3.png"
+              src="/contct/c3.webp"
               alt="Plan your visit - Here's what you need to know before coming to the clinic"
               className="w-full h-full object-cover object-center block"
             />

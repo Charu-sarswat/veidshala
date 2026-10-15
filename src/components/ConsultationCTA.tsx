@@ -8,7 +8,7 @@ export default function ConsultationCTA() {
       {/* Background Banner Image: a7.png */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/a7_cropped.png"
+          src="/a7_cropped.webp"
           alt="Have a question about your care background"
           className="h-full w-full object-cover object-center"
         />

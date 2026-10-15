@@ -10,7 +10,7 @@ export default function TreatmentsHero() {
       {/* Panoramic Hero Background Image: /treatment/r1.png */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/treatment/r1.png"
+          src="/treatment/r1.webp"
           alt="Ayurvedic Treatments Consultation - Care tailored to your needs"
           className="h-full w-full object-cover object-right"
         />

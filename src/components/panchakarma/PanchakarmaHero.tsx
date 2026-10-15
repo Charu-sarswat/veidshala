@@ -10,7 +10,7 @@ export default function PanchakarmaHero() {
       {/* Panoramic Hero Background Image: /panchakarma/i1.png */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/panchakarma/i1.png"
+          src="/panchakarma/i1.webp"
           alt="Traditional therapies. Personalised care. - Panchakarma at Vaidhyashala"
           className="h-full w-full object-cover object-right"
         />

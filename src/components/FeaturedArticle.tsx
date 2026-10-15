@@ -11,7 +11,7 @@ export default function FeaturedArticle() {
           {/* Left Column: Doctor Consultation Image (h2.png) */}
           <div className="relative lg:col-span-6 xl:col-span-6 h-full min-h-[300px] lg:min-h-full overflow-hidden">
             <img
-              src="/h2.png"
+              src="/h2.webp"
               alt="Ayurvedic doctor consultation with patient"
               className="h-full w-full object-cover rounded-t-2xl lg:rounded-tr-none lg:rounded-l-2xl"
             />
@@ -21,7 +21,7 @@ export default function FeaturedArticle() {
           <div className="relative flex flex-col justify-center p-8 sm:p-10 lg:p-12 lg:col-span-6 xl:col-span-6 overflow-hidden bg-[#FAF8F3]">
             {/* Decorative Leaves: cont.png aligned to bottom right matching reference */}
             <img
-              src="/cont.png"
+              src="/cont.webp"
               alt="Decorative leaves illustration"
               className="pointer-events-none absolute -bottom-2 -right-2 w-[280px] sm:w-[340px] lg:w-[400px] max-w-[65%] h-auto object-contain mix-blend-multiply select-none"
             />

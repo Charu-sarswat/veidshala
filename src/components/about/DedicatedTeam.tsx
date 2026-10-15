@@ -30,7 +30,7 @@ export default function DedicatedTeam() {
           <div className="lg:col-span-7">
             <div className="relative overflow-hidden rounded-xl border border-[#E3DDCF] bg-[#FAF8F3] shadow-xs">
               <img
-                src="/about/i4.png"
+                src="/about/i4.webp"
                 alt="The Vaidhyashala Clinical Team of Ayurvedic Doctors and Practitioners"
                 className="w-full h-auto max-h-[460px] object-cover object-center"
               />

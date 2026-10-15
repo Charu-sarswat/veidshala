@@ -30,7 +30,7 @@ export default function CarePillars() {
           <br className="hidden sm:inline" /> your individual needs.
         </>
       ),
-      imageSrc: "/a2.png",
+      imageSrc: "/a2.webp",
       imageAlt: "Ayurvedic doctor consulting patient in clinic",
       href: "/#consultation",
     },
@@ -51,7 +51,7 @@ export default function CarePillars() {
           <br className="hidden sm:inline" /> suitability.
         </>
       ),
-      imageSrc: "/a1.png",
+      imageSrc: "/a1.webp",
       imageAlt: "Traditional Panchakarma Shirodhara therapy",
       href: "/panchakarma",
     },
@@ -72,7 +72,7 @@ export default function CarePillars() {
           <br className="hidden sm:inline" /> well-being.
         </>
       ),
-      imageSrc: "/a3.png",
+      imageSrc: "/a3.webp",
       imageAlt: "Calm yoga and meditation guidance",
       href: "/#yoga",
     },
@@ -93,9 +93,9 @@ export default function CarePillars() {
           <br className="hidden sm:inline" /> treatment and daily health.
         </>
       ),
-      imageSrc: "/a5.png",
+      imageSrc: "/a5.webp",
       imageAlt: "Authentic Ayurvedic herbal formulations and oils",
-      href: "/#products",
+      href: "/products",
     },
   ];
 

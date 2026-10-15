@@ -17,7 +17,7 @@ export default function ExploreCareServices() {
       ),
       description:
         "A detailed discussion of your health concerns, lifestyle and medical history to understand your individual needs.",
-      imageSrc: "/about/i3.png",
+      imageSrc: "/about/i3.webp",
       imageAlt: "Ayurvedic Doctor Consultation",
       href: "/#consultation",
     },
@@ -32,7 +32,7 @@ export default function ExploreCareServices() {
       ),
       description:
         "Personalised Panchakarma therapies planned as per your health condition and suitability.",
-      imageSrc: "/a1.png",
+      imageSrc: "/a1.webp",
       imageAlt: "Panchakarma Shirodhara Therapy",
       href: "/panchakarma",
     },
@@ -47,7 +47,7 @@ export default function ExploreCareServices() {
       ),
       description:
         "Guidance with yoga, meditation and daily routines to support long-term well-being.",
-      imageSrc: "/a3.png",
+      imageSrc: "/a3.webp",
       imageAlt: "Yoga and Meditation Practice",
       href: "/#yoga",
     },
@@ -62,9 +62,9 @@ export default function ExploreCareServices() {
       ),
       description:
         "Authentic Ayurvedic formulations and wellness products to support your treatment and daily health.",
-      imageSrc: "/a5.png",
+      imageSrc: "/a5.webp",
       imageAlt: "Authentic Ayurvedic Medicines and Products",
-      href: "/#products",
+      href: "/products",
     },
   ];
 

@@ -10,7 +10,7 @@ export default function PanchakarmaCTA() {
       {/* Background Wellness Image: /panchakarma/p1.png */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/panchakarma/p1.png"
+          src="/panchakarma/p1.webp"
           alt="Let us plan your care thoughtfully background"
           className="h-full w-full object-cover object-right"
         />

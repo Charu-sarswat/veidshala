@@ -7,7 +7,7 @@ export default function HeroJournal() {
       {/* Panoramic Hero Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero.png"
+          src="/hero.webp"
           alt="The Vaidhyashala Health Journal - Ayurveda herbs, brass mortar, pestle, and journal"
           className="h-full w-full object-cover object-right"
         />

@@ -12,7 +12,7 @@ export default function Logo({
   return (
     <div className={`flex items-center select-none ${className}`}>
       <img
-        src="/lo.png"
+        src="/lo.webp"
         alt="Vaidhyashala - Ayurvedic Clinic & Panchakarma Centre"
         className="h-[60px] sm:h-[68px] w-auto object-contain mix-blend-multiply"
       />

@@ -33,7 +33,7 @@ export default function HolisticCare() {
           {/* Right Column: i7.png Image as requested */}
           <div className="lg:col-span-6 xl:col-span-6 flex justify-center items-center">
             <img
-              src="/about/i7.png"
+              src="/about/i7.webp"
               alt="Listen with care, Plan for the individual, Guide at every step"
               className="w-full h-auto max-h-[320px] object-contain"
             />

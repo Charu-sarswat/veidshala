@@ -7,7 +7,7 @@ export default function AboutCTA() {
     <section className="relative overflow-hidden bg-[#0D3226] py-8 sm:py-10 lg:py-12 text-white">
       {/* Decorative botanical element on the right */}
       <img
-        src="/cont.png"
+        src="/cont.webp"
         alt="Decorative leaf motif"
         className="pointer-events-none absolute -bottom-10 -right-10 w-[300px] sm:w-[380px] opacity-15 select-none filter invert"
       />
