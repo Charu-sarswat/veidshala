@@ -11,6 +11,7 @@ import {
   Info,
   ArrowRight,
 } from "lucide-react";
+import ProductEnquiryModal from "@/components/products/ProductEnquiryModal";
 
 export interface ProductDetailModalProps {
   isOpen?: boolean;
@@ -42,6 +43,7 @@ export default function ProductDetailModal({
   // Accordion states: 1st is open by default, 2nd is closed
   const [isProductInfoOpen, setIsProductInfoOpen] = useState(true);
   const [isDirectionsOpen, setIsDirectionsOpen] = useState(false);
+  const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
 
   // Gallery images - fallback to existing product image or placeholder
   const defaultImages = [
@@ -275,7 +277,12 @@ export default function ProductDetailModal({
             <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <button
                 type="button"
-                onClick={onEnquire}
+                onClick={() => {
+                  setIsEnquiryModalOpen(true);
+                  if (onEnquire) {
+                    onEnquire();
+                  }
+                }}
                 className="group flex flex-1 items-center justify-center gap-2 rounded-lg bg-[#0D382B] px-5 sm:px-6 py-3 text-[14px] font-bold text-white shadow-xs transition-all hover:bg-[#154D3C]"
               >
                 <span>Enquire About This Product</span>
@@ -298,6 +305,18 @@ export default function ProductDetailModal({
           </div>
         </div>
       </div>
+
+      {/* Standalone Product Enquiry Modal */}
+      <ProductEnquiryModal
+        isOpen={isEnquiryModalOpen}
+        onClose={() => setIsEnquiryModalOpen(false)}
+        product={{
+          id: product?.id,
+          title: title,
+          categoryTag: categoryTag,
+          imageSrc: defaultImages[0],
+        }}
+      />
     </div>
   );
 }

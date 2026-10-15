@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import { ArrowRight, ChevronDown, Search } from "lucide-react";
 import ProductDetailModal from "@/components/products/ProductDetailModal";
+import ProductEnquiryModal from "@/components/products/ProductEnquiryModal";
 
 interface Product {
   id: string;
@@ -211,6 +212,7 @@ export default function ProductCatalog() {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(12);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [enquiryProduct, setEnquiryProduct] = useState<Product | null>(null);
 
   const filteredProducts = useMemo(() => {
     return allProducts.filter((product) => {
@@ -363,14 +365,23 @@ export default function ProductCatalog() {
               "/product/vaidhyashala_product_page_images/14_product_guidance_consultation.webp",
             ],
           }}
-          onEnquire={() => {
-            setSelectedProduct(null);
-            const el = document.getElementById("enquire");
-            if (el) el.scrollIntoView({ behavior: "smooth" });
-          }}
           onContactClinic={() => {
             setSelectedProduct(null);
             window.location.href = "/contact";
+          }}
+        />
+      )}
+
+      {/* Product Enquiry Modal Popup */}
+      {enquiryProduct && (
+        <ProductEnquiryModal
+          isOpen={!!enquiryProduct}
+          onClose={() => setEnquiryProduct(null)}
+          product={{
+            id: enquiryProduct.id,
+            title: enquiryProduct.title,
+            categoryTag: enquiryProduct.categoryTag,
+            imageSrc: enquiryProduct.imageSrc,
           }}
         />
       )}

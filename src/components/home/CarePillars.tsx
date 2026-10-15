@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import AyurvedicConsultationModal from "@/components/consultation/AyurvedicConsultationModal";
 
 interface Pillar {
   number: string;
@@ -12,6 +15,7 @@ interface Pillar {
 }
 
 export default function CarePillars() {
+  const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
   const pillars: Pillar[] = [
     {
       number: "01 /",
@@ -125,7 +129,14 @@ export default function CarePillars() {
             >
               <div>
                 {/* Image */}
-                <div className="overflow-hidden rounded-xl aspect-[16/11] bg-[#EAE4D8]">
+                <div
+                  className={`overflow-hidden rounded-xl aspect-[16/11] bg-[#EAE4D8] ${
+                    pillar.number === "01 /" ? "cursor-pointer" : ""
+                  }`}
+                  onClick={() => {
+                    if (pillar.number === "01 /") setIsConsultationModalOpen(true);
+                  }}
+                >
                   <img
                     src={pillar.imageSrc}
                     alt={pillar.imageAlt}
@@ -139,7 +150,14 @@ export default function CarePillars() {
                 </div>
 
                 {/* Title */}
-                <h3 className="mt-1 font-serif text-[17.5px] sm:text-[18px] font-medium leading-[1.25] text-[#0D3226] group-hover:text-[#185340] transition-colors">
+                <h3
+                  className={`mt-1 font-serif text-[17.5px] sm:text-[18px] font-medium leading-[1.25] text-[#0D3226] group-hover:text-[#185340] transition-colors ${
+                    pillar.number === "01 /" ? "cursor-pointer" : ""
+                  }`}
+                  onClick={() => {
+                    if (pillar.number === "01 /") setIsConsultationModalOpen(true);
+                  }}
+                >
                   {pillar.title}
                 </h3>
 
@@ -151,18 +169,43 @@ export default function CarePillars() {
 
               {/* Link CTA */}
               <div className="mt-3.5 pt-0.5">
-                <Link
-                  href={pillar.href}
-                  className="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-[#0D3226] transition-colors hover:text-[#195642]"
-                >
-                  <span className="border-b-[1.5px] border-[#A58351] pb-0.5">Learn more</span>
-                  <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-                </Link>
+                {pillar.number === "01 /" ? (
+                  <button
+                    type="button"
+                    onClick={() => setIsConsultationModalOpen(true)}
+                    className="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-[#0D3226] transition-colors hover:text-[#195642] cursor-pointer"
+                  >
+                    <span className="border-b-[1.5px] border-[#A58351] pb-0.5">Learn more</span>
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                  </button>
+                ) : (
+                  <Link
+                    href={pillar.href}
+                    className="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-[#0D3226] transition-colors hover:text-[#195642]"
+                  >
+                    <span className="border-b-[1.5px] border-[#A58351] pb-0.5">Learn more</span>
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                  </Link>
+                )}
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Ayurvedic Consultation Popup Modal */}
+      <AyurvedicConsultationModal
+        isOpen={isConsultationModalOpen}
+        onClose={() => setIsConsultationModalOpen(false)}
+        onRequestAppointment={() => {
+          setIsConsultationModalOpen(false);
+          const element = document.getElementById("appointment");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+        onBackToWebsite={() => setIsConsultationModalOpen(false)}
+      />
     </section>
   );
 }
