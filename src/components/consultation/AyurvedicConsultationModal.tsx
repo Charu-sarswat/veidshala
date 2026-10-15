@@ -17,16 +17,24 @@ export default function AyurvedicConsultationModal({
   onRequestAppointment,
   onBackToWebsite,
 }: AyurvedicConsultationModalProps) {
-  // Handle ESC key press to close modal
+  // Handle ESC key press and lock background scrolling
   useEffect(() => {
     if (!isOpen) return;
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         onClose();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
