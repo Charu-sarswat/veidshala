@@ -1,10 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import PlanConsultationModal from "@/components/consultation/PlanConsultationModal";
 
 export default function HomeHero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section className="relative w-full overflow-hidden bg-[#FAF7F2]">
       {/* Panoramic Hero Background Image: /home/h1.png */}
@@ -43,13 +45,14 @@ export default function HomeHero() {
 
           {/* Two Action Buttons */}
           <div className="mt-7 sm:mt-8 flex flex-wrap items-center gap-4">
-            <Link
-              href="/#consultation"
-              className="group inline-flex items-center gap-3 rounded-md bg-[#0A3527] px-7 sm:px-8 py-3.5 sm:py-4 text-[15px] sm:text-[16px] font-semibold text-white shadow-xs transition-all hover:bg-[#124534]"
+            <button
+              type="button"
+              onClick={() => setIsModalOpen(true)}
+              className="group inline-flex items-center gap-3 rounded-md bg-[#0A3527] px-7 sm:px-8 py-3.5 sm:py-4 text-[15px] sm:text-[16px] font-semibold text-white shadow-xs transition-all hover:bg-[#124534] cursor-pointer"
             >
               <span>Book a Consultation</span>
               <ArrowRight className="h-4.5 w-4.5 sm:h-5 sm:w-5 transition-transform duration-200 group-hover:translate-x-1" />
-            </Link>
+            </button>
 
             <Link
               href="/treatments"
@@ -60,6 +63,12 @@ export default function HomeHero() {
           </div>
         </div>
       </div>
+
+      {/* Appointment Request Modal */}
+      <PlanConsultationModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }
