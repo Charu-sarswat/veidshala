@@ -1,59 +1,51 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
-import HeroJournal from "@/components/HeroJournal";
-import SearchFilter from "@/components/SearchFilter";
-import FeaturedArticle from "@/components/FeaturedArticle";
-import ArticleGrid from "@/components/ArticleGrid";
+import HomeHero from "@/components/home/HomeHero";
+import HighlightsBar from "@/components/home/HighlightsBar";
+import CarePillars from "@/components/home/CarePillars";
+import ApproachSection from "@/components/home/ApproachSection";
+import ConcernCategories from "@/components/home/ConcernCategories";
+import ProductsBanner from "@/components/home/ProductsBanner";
+import AppointmentBooking from "@/components/home/AppointmentBooking";
+import FaqSection from "@/components/home/FaqSection";
 import ConsultationCTA from "@/components/ConsultationCTA";
 import Footer from "@/components/Footer";
-import { initialArticles, Category } from "@/data/articles";
 
-export default function HealthJournalPage() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<Category>("All");
-
-  const filteredArticles = useMemo(() => {
-    return initialArticles.filter((article) => {
-      const matchesCategory =
-        selectedCategory === "All" || article.category === selectedCategory;
-
-      const matchesSearch =
-        searchQuery.trim() === "" ||
-        article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        article.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        article.category.toLowerCase().includes(searchQuery.toLowerCase());
-
-      return matchesCategory && matchesSearch;
-    });
-  }, [searchQuery, selectedCategory]);
-
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#FBF9F5]">
+    <div className="flex min-h-screen flex-col bg-[#FBF9F5] text-[#22332A]">
       {/* Top Navigation */}
       <Navbar />
 
-      {/* Main Page Content */}
+      {/* Main Content */}
       <main className="flex-1">
-        {/* Hero Section */}
-        <HeroJournal />
+        {/* 1. Hero Section: "Your care. Our Ayurvedic approach." */}
+        <HomeHero />
 
-        {/* Search & Category Filter Bar */}
-        <SearchFilter
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedCategory={selectedCategory}
-          onSelectCategory={setSelectedCategory}
-        />
+        {/* 2. Green Highlights Strip: 4 Key Pillars */}
+        <HighlightsBar />
 
-        {/* Featured Article Card */}
-        <FeaturedArticle />
+        {/* 3. Care at Vaidhyashala: "Care that begins with understanding you." */}
+        <CarePillars />
 
-        {/* 6 Articles Grid & Load More */}
-        <ArticleGrid articles={filteredArticles} />
+        {/* 4. Our Approach: "Traditional therapies. Personal attention." */}
+        <ApproachSection />
 
-        {/* Pre-Footer Consultation CTA */}
+        {/* 5. Explore Care by Concern: "Find support for what matters to you." */}
+        <ConcernCategories />
+
+        {/* 6. Authentic Products: "Ayurveda beyond your consultation." */}
+        <ProductsBanner />
+
+        {/* 7. Appointment Booking Strip: "Plan your first visit." */}
+        <AppointmentBooking />
+
+        {/* 8. FAQs: "Before your consultation." */}
+        <FaqSection />
+
+        {/* 9. Pre-Footer Banner: ConsultationCTA */}
         <ConsultationCTA />
       </main>
 

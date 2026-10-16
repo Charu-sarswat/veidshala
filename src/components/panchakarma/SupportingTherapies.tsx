@@ -1,11 +1,21 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
+import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import AyurvedicConsultationModal from "@/components/consultation/AyurvedicConsultationModal";
+
+interface TherapyItem {
+  title: string;
+  description: string;
+  imageSrc: string;
+  fallbackSrc: string;
+  alt: string;
+}
 
 export default function SupportingTherapies() {
-  const therapies = [
+  const [selectedTherapy, setSelectedTherapy] = useState<TherapyItem | null>(null);
+
+  const therapies: TherapyItem[] = [
     {
       title: "Abhyanga",
       description: "Ayurvedic oil massage.",
@@ -97,7 +107,13 @@ export default function SupportingTherapies() {
               className="group flex flex-col transition-all duration-200"
             >
               {/* Therapy Photo */}
-              <div className="overflow-hidden rounded-xl aspect-[16/10] bg-[#EAE4D8] border border-[#ECE5D9]">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedTherapy(therapy);
+                }}
+                className="overflow-hidden rounded-xl aspect-[16/10] bg-[#EAE4D8] border border-[#ECE5D9] cursor-pointer"
+              >
                 <img
                   src={therapy.imageSrc}
                   onError={(e) => {
@@ -109,7 +125,13 @@ export default function SupportingTherapies() {
               </div>
 
               {/* Title */}
-              <h3 className="mt-3 font-serif text-[18px] sm:text-[19px] font-medium leading-tight text-[#0D3226]">
+              <h3
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedTherapy(therapy);
+                }}
+                className="mt-3 font-serif text-[18px] sm:text-[19px] font-medium leading-tight text-[#0D3226] cursor-pointer hover:text-[#185340]"
+              >
                 {therapy.title}
               </h3>
 
@@ -120,13 +142,17 @@ export default function SupportingTherapies() {
 
               {/* Action Link */}
               <div className="mt-2.5">
-                <Link
-                  href="#consultation"
-                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#0D3226] transition-colors hover:text-[#185340]"
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedTherapy(therapy);
+                  }}
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#0D3226] transition-colors hover:text-[#185340] cursor-pointer"
                 >
                   <span>Ask about suitability</span>
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
-                </Link>
+                </button>
               </div>
             </div>
           ))}
@@ -137,6 +163,35 @@ export default function SupportingTherapies() {
           Therapy selection and availability are confirmed during consultation.
         </p>
       </div>
+
+      {/* Ayurvedic Therapy Detail Modal */}
+      <AyurvedicConsultationModal
+        isOpen={!!selectedTherapy}
+        onClose={() => setSelectedTherapy(null)}
+        therapy={
+          selectedTherapy
+            ? {
+                title: selectedTherapy.title,
+                imageSrc: selectedTherapy.imageSrc,
+                category: "AYURVEDIC THERAPY",
+                subtitle: "Learn about the therapy before planning your consultation.",
+                aboutTitle: `What is ${selectedTherapy.title}?`,
+                aboutDescription:
+                  selectedTherapy.title === "Shirodhara"
+                    ? "A traditional Ayurvedic therapy involving a steady flow of a selected liquid over the forehead. The preparation and procedure are chosen by the treating doctor."
+                    : `${selectedTherapy.description} A personalized therapeutic procedure recommended following doctor consultation.`,
+              }
+            : undefined
+        }
+        onRequestAppointment={() => {
+          setSelectedTherapy(null);
+          const el = document.getElementById("consultation");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+        onBackToWebsite={() => setSelectedTherapy(null)}
+      />
     </section>
   );
 }

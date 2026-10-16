@@ -9,7 +9,7 @@ export default function PrivacyNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "/home", active: false },
+    { name: "Home", href: "/", active: false },
     { name: "About", href: "/about", active: false },
     { name: "Treatments", href: "/treatments", active: false },
     { name: "Panchakarma", href: "/panchakarma", active: false },
@@ -21,7 +21,7 @@ export default function PrivacyNavbar() {
     <header className="sticky top-0 z-50 w-full border-b border-[#EAE5DA]/70 bg-[#FAF8F3]/95 backdrop-blur-md">
       <div className="mx-auto flex h-[80px] max-w-[1400px] items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Left: Brand Logo */}
-        <Link href="/home" className="transition-opacity hover:opacity-95">
+        <Link href="/" className="transition-opacity hover:opacity-95">
           <Logo variant="dark" />
         </Link>
 

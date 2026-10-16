@@ -18,9 +18,9 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "The Vaidhyashala Health Journal | Ayurvedic Clinic & Panchakarma Centre",
+  title: "Vaidhyashala | Ayurvedic Clinic & Panchakarma Centre",
   description:
-    "Explore Ayurveda, therapies and thoughtful everyday routines at Vaidhyashala Health Journal.",
+    "Rooted in Ayurveda. Dedicated to your care. Authentic Ayurvedic consultations, traditional Panchakarma therapies, and herbal wellness care at Vaidhyashala.",
   keywords: [
     "Ayurveda",
     "Panchakarma",

@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Footer() {
   const quickLinks = [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Treatments", href: "/treatments" },
     { name: "Panchakarma", href: "/panchakarma" },
@@ -12,16 +12,16 @@ export default function Footer() {
     { name: "Contact", href: "/contact" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms & Conditions", href: "/terms" },
-    { name: "Blog", href: "/#blog" },
+    { name: "Blog", href: "/blog" },
     { name: "Patient Testimonials", href: "/testimonials" },
-    { name: "FAQs", href: "/#faqs" },
+    { name: "FAQs", href: "/faqs" },
   ];
 
   const ourServices = [
-    { name: "Doctor Consultation", href: "/#services-consultation" },
+    { name: "Doctor Consultation", href: "/doctor-consultation" },
     { name: "Panchakarma Therapies", href: "/panchakarma" },
-    { name: "Yoga & Lifestyle Care", href: "/#services-yoga" },
-    { name: "Ayurvedic Medicines", href: "/#services-medicines" },
+    { name: "Yoga & Lifestyle Care", href: "/yoga-lifestyle-care" },
+    { name: "Ayurvedic Medicines", href: "/ayurvedic-medicines" },
   ];
 
   return (
