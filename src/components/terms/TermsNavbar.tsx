@@ -14,6 +14,7 @@ export default function TermsNavbar() {
     { name: "Treatments", href: "/treatments", active: false },
     { name: "Panchakarma", href: "/panchakarma", active: false },
     { name: "Products", href: "/products", active: false },
+    { name: "Careers", href: "/careers", active: false },
     { name: "Contact", href: "/contact", active: false },
   ];
 

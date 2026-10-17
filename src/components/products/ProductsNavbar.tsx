@@ -14,6 +14,7 @@ export default function ProductsNavbar() {
     { name: "Treatments", href: "/treatments", active: false },
     { name: "Panchakarma", href: "/panchakarma", active: false },
     { name: "Products", href: "/products", active: true },
+    { name: "Careers", href: "/careers", active: false },
     { name: "Contact", href: "/contact", active: false },
   ];
 
