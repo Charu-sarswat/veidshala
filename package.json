@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "convert:webp": "node convert_to_webp.js",
+    "update:webp": "node update_image_references.js",
+    "clean:images": "node remove_original_images.js",
+    "images:webp": "node convert_to_webp.js && node update_image_references.js"
   },
   "dependencies": {
     "lucide-react": "^1.56.0",
